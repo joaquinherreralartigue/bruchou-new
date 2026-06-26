@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BFdeR - Diseño 2026</title>
+    <meta
+      name="description"
+      content="Implementación local del home BFdeR 2026 a partir del diseño provisto en Figma."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" data-node-id="7185:9534" data-header-theme="dark">
+        <div class="hero__overlay"></div>
+        <header class="hero__header section-shell site-header site-header--dark" data-site-header>
+          <a class="brand" href="#" aria-label="Bruchou &amp; Funes de Rioja">
+            <img
+              src="./assets/logo-white.svg"
+              alt="Bruchou &amp; Funes de Rioja"
+              data-header-logo
+            />
+          </a>
+
+          <nav class="hero__nav" aria-label="Principal">
+            <button
+              class="hero__nav-item hero__nav-item--button"
+              id="mega-menu-trigger-nosotros"
+              type="button"
+              data-menu-trigger="nosotros"
+              aria-expanded="false"
+              aria-controls="mega-menu-nosotros"
+            >
+              <span>Nosotros</span>
+              <img src="./assets/nav-arrow.svg" alt="" data-header-arrow />
+            </button>
+            <button
+              class="hero__nav-item hero__nav-item--button"
+              id="mega-menu-trigger-expertise"
+              type="button"
+              data-menu-trigger="expertise"
+              aria-expanded="false"
+              aria-controls="mega-menu-expertise"
+            >
+              <span>&Aacute;reas de pr&aacute;ctica</span>
+              <img src="./assets/nav-arrow.svg" alt="" data-header-arrow />
+            </button>
+            <a class="hero__nav-item" href="#sectores-industriales">
+              <span>Sectores</span>
+              <img src="./assets/nav-arrow.svg" alt="" data-header-arrow />
+            </a>
+            <a class="hero__nav-item" href="https://bruchoufunes.com/profesionales#tabs" target="_blank" rel="noreferrer">
+              <span>Equipo</span>
+              <img src="./assets/nav-arrow.svg" alt="" data-header-arrow />
+            </a>
+            <a class="hero__nav-item" href="#novedades">
+              <span>Novedades</span>
+              <img src="./assets/nav-arrow.svg" alt="" data-header-arrow />
+            </a>
+            <a class="hero__nav-item" href="https://bruchoufunes.com/trabajar-en-bruchou-funes-de-rioja/" target="_blank" rel="noreferrer">
+              <span>Carrera</span>
+              <img src="./assets/nav-arrow.svg" alt="" data-header-arrow />
+            </a>
+          </nav>
+
+          <button class="assistant-button" type="button">
+            <img src="./assets/ai-icon-light.svg" alt="" data-header-assistant-icon />
+            <span>Búsqueda asistida</span>
+          </button>
+        </header>
+
+        <div class="mega-menu-layer" data-mega-menu-layer hidden>
+          <button class="mega-menu-layer__backdrop" type="button" aria-label="Cerrar menú" data-menu-close></button>
+
+          <section
+            class="mega-menu mega-menu--nosotros"
+            id="mega-menu-nosotros"
+            data-menu-panel="nosotros"
+            aria-labelledby="mega-menu-trigger-nosotros"
+            hidden
+          >
+            <div class="section-shell mega-menu__shell">
+              <div class="mega-menu__lead">
+                <h2>Nosotros</h2>
+                <p>
+                  Brindamos una amplia gama de servicios legales altamente especializados que abarcan
+                  todas las áreas de práctica para hacer negocios en Argentina.
+                </p>
+                <div class="mega-menu__assistant">
+                  <h3>Búsqueda asistida</h3>
+                  <label class="search-input search-input--menu" aria-label="Búsqueda asistida">
+                    <span class="search-input__main">
+                      <img src="./assets/ai-icon-light.svg" alt="" />
+                      <input type="text" placeholder="Contanos qué estás buscando." />
+                    </span>
+                    <button type="button" aria-label="Enviar">
+                      <img src="./assets/send-icon.svg" alt="" />
+                    </button>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mega-menu__links" role="list">
+                <a class="mega-menu__link" href="#">Nuestra firma</a>
+                <a class="mega-menu__link" href="https://bruchoufunes.com/compromiso-sustentable/" target="_blank" rel="noreferrer">Compromiso sustentable</a>
+                <a class="mega-menu__link" href="https://bruchoufunes.com/premios-y-distinciones/" target="_blank" rel="noreferrer">Reconocimientos</a>
+                <a class="mega-menu__link" href="https://bruchoufunes.com/alianzas-internacionales/" target="_blank" rel="noreferrer">Alianzas internacionales</a>
+              </div>
+
+              <article class="mega-menu__feature mega-menu__feature--case">
+                <div class="mega-menu__feature-topline">
+                  <span>Ficha del asunto</span>
+                </div>
+                <h3>Vaca Muerta: infraestructura para el futuro exportador argentino.</h3>
+                <p>
+                  Bruchou asesoró a VMOS en el lanzamiento del Proyecto Vaca Muerta Sur, una inversión de aproximadamente US$3.000 millones para desarrollar un oleoducto de 437 km...
+                </p>
+                <a class="text-link text-link--navy" href="#asuntos-representativos">
+                  <span>Consultar asunto representativo</span>
+                  <img src="./assets/case-arrow.svg" alt="" />
+                </a>
+              </article>
+            </div>
+          </section>
+
+          <section
+            class="mega-menu mega-menu--expertise"
+            id="mega-menu-expertise"
+            data-menu-panel="expertise"
+            aria-labelledby="mega-menu-trigger-expertise"
+            hidden
+          >
+            <div class="section-shell mega-menu__shell mega-menu__shell--compact">
+              <div class="mega-menu__lead">
+                <h2>&Aacute;reas de pr&aacute;ctica</h2>
+                <p>
+                  Asesoramiento legal especializado para acompañar decisiones estratégicas, operaciones
+                  complejas y desafíos regulatorios en Argentina.
+                </p>
+                <a class="text-link text-link--navy mega-menu__cta" href="./areas-de-practica.html">
+                  <span>Ver todas las &aacute;reas</span>
+                  <img src="./assets/directory-arrow.svg" alt="" />
+                </a>
+
+                <div class="mega-menu__assistant">
+                  <h3>Búsqueda asistida</h3>
+                  <label class="search-input search-input--menu" aria-label="Búsqueda asistida expertise">
+                    <span class="search-input__main">
+                      <img src="./assets/ai-icon-light.svg" alt="" />
+                      <input type="text" placeholder="Contanos qué estás buscando." />
+                    </span>
+                    <button type="button" aria-label="Enviar">
+                      <img src="./assets/send-icon.svg" alt="" />
+                    </button>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mega-menu__links mega-menu__links--expertise" role="list">
+                <a class="mega-menu__link mega-menu__link--with-arrow" href="./areas-de-practica.html">
+                  <span>Asesoría</span>
+                  <img src="./assets/directory-arrow.svg" alt="" />
+                </a>
+                <a class="mega-menu__link mega-menu__link--with-arrow" href="./areas-de-practica.html">
+                  <span>Transaccional</span>
+                  <img src="./assets/directory-arrow.svg" alt="" />
+                </a>
+                <a class="mega-menu__link mega-menu__link--with-arrow" href="./areas-de-practica.html">
+                  <span>Litigios</span>
+                  <img src="./assets/directory-arrow.svg" alt="" />
+                </a>
+                <a class="mega-menu__link mega-menu__link--with-arrow" href="./areas-de-practica.html">
+                  <span>Todas</span>
+                  <img src="./assets/directory-arrow.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="hero__canvas section-shell">
+          <div class="hero__copy">
+            <p class="hero__eyebrow section-label section-label--light">Derecho de negocios</p>
+            <h1>Asesoramos en operaciones donde convergen derecho corporativo, regulatorio y financiero desde una sola firma.</h1>
+            <p class="hero__lede">
+              Bruchou &amp; Funes de Rioja es un estudio jurídico de práctica plena con especialización en operaciones complejas que involucran energía, infraestructura, mercado de capitales y derecho corporativo.
+            </p>
+            <div class="hero__actions" aria-label="Accesos principales">
+              <a class="hero__cta hero__cta--primary" href="#asuntos-representativos">Ver asuntos representativos</a>
+              <a class="hero__cta" href="#sectores-industriales">Explorar sectores</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="newsfeed">
+          <div class="newsfeed__inner section-shell">
+          <p class="newsfeed__label">Últimas novedades</p>
+          <div class="newsfeed__marquee" data-news-ticker aria-label="Ultimas novedades">
+            <div class="newsfeed__track">
+              <div class="newsfeed__items">
+            <span>IGJ avanza hacia la digitalización plena del procedimiento registral</span>
+            <span>·</span>
+            <span>Nuevas Reglas de Arbitraje ICC 2026</span>
+            <span>·</span>
+            <span>IGJ avanza en registro digital</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="timeline timeline--work section-shell" id="nuestro-trabajo" data-node-id="7185:9536" data-header-theme="light">
+        <div class="timeline__content">
+          <div class="timeline__intro">
+            <p class="section-label">Cómo trabajamos</p>
+            <h2>Un método para ordenar asuntos complejos.</h2>
+            <p class="timeline__lede">
+              Partimos del contexto de negocio, identificamos restricciones regulatorias y armamos
+              equipos por asunto para sostener decisiones y ejecución con una misma lectura.
+            </p>
+          </div>
+
+          <div class="timeline__editorials">
+            <article class="editorial-point">
+              <h3>Contexto</h3>
+              <p>Industria, regulación, contraparte y objetivo comercial antes de recomendar.</p>
+            </article>
+            <article class="editorial-point">
+              <h3>Criterio</h3>
+              <p>Escenarios comparables, riesgos priorizados y decisiones explicables.</p>
+            </article>
+            <article class="editorial-point">
+              <h3>Ejecución</h3>
+              <p>Capacidades coordinadas y seniority cerca de los hitos críticos.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="directory section-shell" id="sectores-industriales" data-node-id="7185:9537" data-header-theme="light">
+        <div class="directory__shell">
+          <div class="directory__content">
+            <p class="section-label">Sectores e industrias</p>
+            <h2>Sectores estratégicos. Mirada integral.</h2>
+            <p>
+              Una entrada directa a los entornos donde la agenda regulatoria, la inversión y la
+              ejecución del negocio exigen asesoramiento con lectura sectorial concreta.
+            </p>
+            <a class="text-link text-link--navy" href="#sectores-grid">
+              <span>Explorar sectores</span>
+              <img src="./assets/directory-arrow.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="sector-grid" id="sectores-grid">
+            <article class="sector-card">
+              <span class="sector-card__icon sector-card__icon--energy" aria-hidden="true"></span>
+              <h3>Energía y Recursos Naturales</h3>
+              <p>Marcos regulatorios, concesiones, financiamiento de proyectos y operaciones en hidrocarburos, minería y energías renovables.</p>
+              <ul class="sector-card__chips" aria-label="Capacidades relacionadas">
+                <li>Regulación</li>
+                <li>Proyectos</li>
+                <li>Financiamiento</li>
+              </ul>
+              <a class="sector-card__cta" href="#asuntos-representativos">Ver asuntos de energía</a>
+            </article>
+            <article class="sector-card">
+              <span class="sector-card__icon sector-card__icon--capital" aria-hidden="true"></span>
+              <h3>Mercado de Capitales</h3>
+              <p>Emisión de deuda y acciones, estructuración de instrumentos y operaciones que requieren ejecución regulatoria precisa.</p>
+              <ul class="sector-card__chips" aria-label="Capacidades relacionadas">
+                <li>ONs</li>
+                <li>Oferta pública</li>
+                <li>Regulación CNV</li>
+              </ul>
+              <a class="sector-card__cta" href="#asuntos-representativos">Ver asuntos de mercado</a>
+            </article>
+            <article class="sector-card">
+              <span class="sector-card__icon sector-card__icon--infrastructure" aria-hidden="true"></span>
+              <h3>Fusiones y Adquisiciones</h3>
+              <p>Adquisiciones, desinversiones, joint ventures y reestructuraciones societarias en sectores regulados y de alta complejidad.</p>
+              <ul class="sector-card__chips" aria-label="Capacidades relacionadas">
+                <li>M&amp;A</li>
+                <li>Due diligence</li>
+                <li>Gobierno corporativo</li>
+              </ul>
+              <a class="sector-card__cta" href="#asuntos-representativos">Ver asuntos transaccionales</a>
+            </article>
+            <article class="sector-card">
+              <span class="sector-card__icon sector-card__icon--banking" aria-hidden="true"></span>
+              <h3>Infraestructura y Concesiones</h3>
+              <p>Proyectos de infraestructura, concesiones públicas, contratos de obra y financiamiento estructurado.</p>
+              <ul class="sector-card__chips" aria-label="Capacidades relacionadas">
+                <li>Concesiones</li>
+                <li>Contratos</li>
+                <li>Project finance</li>
+              </ul>
+              <a class="sector-card__cta" href="#asuntos-representativos">Ver asuntos de infraestructura</a>
+            </article>
+            <article class="sector-card">
+              <span class="sector-card__icon sector-card__icon--realestate" aria-hidden="true"></span>
+              <h3>Derecho Corporativo</h3>
+              <p>Gobierno societario, estructuras corporativas complejas, cumplimiento regulatorio y asesoramiento continuo a empresas.</p>
+              <ul class="sector-card__chips" aria-label="Capacidades relacionadas">
+                <li>Societario</li>
+                <li>Compliance</li>
+                <li>Contratos</li>
+              </ul>
+              <a class="sector-card__cta" href="./areas-de-practica.html">Explorar capacidades</a>
+            </article>
+            <article class="sector-card">
+              <span class="sector-card__icon sector-card__icon--digital" aria-hidden="true"></span>
+              <h3>Litigios y Arbitraje</h3>
+              <p>Disputas comerciales, arbitraje internacional, litigios regulatorios y defensa en procesos de alta exposición.</p>
+              <ul class="sector-card__chips" aria-label="Capacidades relacionadas">
+                <li>Arbitraje</li>
+                <li>Contencioso</li>
+                <li>Regulatorio</li>
+              </ul>
+              <a class="sector-card__cta" href="./areas-de-practica.html">Explorar litigios</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study" id="asuntos-representativos" data-node-id="7185:9538" data-header-theme="light">
+        <div class="section-shell case-study__shell">
+          <p class="section-label section-label--padded">Asuntos representativos</p>
+
+          <div class="case-study__intro">
+            <h2>Evidencia concreta de capacidad institucional y operativa.</h2>
+            <p>
+              Una selección editorial de asuntos para mostrar cómo se combinan lectura sectorial,
+              capacidades jurídicas y ejecución coordinada.
+            </p>
+          </div>
+
+          <div class="matter-grid">
+            <article class="case-card case-card--featured">
+              <div class="case-card__topline">
+                <span>Asunto representativo</span>
+                <span>N&ordm; 01</span>
+              </div>
+
+              <div class="case-card__body">
+                <div class="case-card__main">
+                  <h3>TODO: validar asunto destacado de energía o infraestructura.</h3>
+                  <p>
+                    TODO: reemplazar por descripción real aprobada. La ficha debe explicar el contexto,
+                    la complejidad jurídica y la coordinación de capacidades sin revelar información
+                    confidencial.
+                  </p>
+                  <a class="text-link text-link--navy" href="#">
+                    <span>Consultar ficha del asunto</span>
+                    <img src="./assets/case-arrow.svg" alt="" />
+                  </a>
+                </div>
+
+                <dl class="case-card__facts">
+                  <div>
+                    <dt>Sector</dt>
+                    <dd>TODO: sector validado</dd>
+                  </div>
+                  <div>
+                    <dt>Tipo</dt>
+                    <dd>TODO: operación / financiamiento / disputa / regulatorio</dd>
+                  </div>
+                  <div>
+                    <dt>Alcance</dt>
+                    <dd>TODO: jurisdicción o alcance transfronterizo</dd>
+                  </div>
+                  <div class="case-card__capabilities">
+                    <dt>Capacidades</dt>
+                    <dd>
+                      <ul class="tag-list">
+                        <li>TODO: capacidad 1</li>
+                        <li>TODO: capacidad 2</li>
+                        <li>TODO: capacidad 3</li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </article>
+
+            <article class="case-card case-card--secondary">
+              <div class="case-card__topline">
+                <span>Asunto representativo</span>
+                <span>N&ordm; 02</span>
+              </div>
+
+              <div class="case-card__main">
+                <h3>TODO: validar asunto de mercado de capitales.</h3>
+                <p>TODO: reemplazar por síntesis real del asunto y su exigencia técnica.</p>
+                <dl class="case-card__facts">
+                  <div>
+                    <dt>Sector</dt>
+                    <dd>TODO: sector validado</dd>
+                  </div>
+                  <div>
+                    <dt>Tipo</dt>
+                    <dd>TODO: tipo de asunto</dd>
+                  </div>
+                  <div>
+                    <dt>Alcance</dt>
+                    <dd>TODO: jurisdicción / mercado</dd>
+                  </div>
+                  <div class="case-card__capabilities">
+                    <dt>Capacidades</dt>
+                    <dd>
+                      <ul class="tag-list">
+                        <li>TODO: capacidad</li>
+                        <li>TODO: capacidad</li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+                <a class="text-link text-link--navy" href="#">
+                  <span>Consultar ficha del asunto</span>
+                  <img src="./assets/case-arrow.svg" alt="" />
+                </a>
+              </div>
+            </article>
+
+            <article class="case-card case-card--secondary">
+              <div class="case-card__topline">
+                <span>Asunto representativo</span>
+                <span>N&ordm; 03</span>
+              </div>
+
+              <div class="case-card__main">
+                <h3>TODO: validar asunto de litigios, regulatorio o M&amp;A.</h3>
+                <p>TODO: reemplazar por síntesis real del asunto y sus capacidades involucradas.</p>
+                <dl class="case-card__facts">
+                  <div>
+                    <dt>Sector</dt>
+                    <dd>TODO: sector validado</dd>
+                  </div>
+                  <div>
+                    <dt>Tipo</dt>
+                    <dd>TODO: tipo de asunto</dd>
+                  </div>
+                  <div>
+                    <dt>Alcance</dt>
+                    <dd>TODO: jurisdicción / alcance</dd>
+                  </div>
+                  <div class="case-card__capabilities">
+                    <dt>Capacidades</dt>
+                    <dd>
+                      <ul class="tag-list">
+                        <li>TODO: capacidad</li>
+                        <li>TODO: capacidad</li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+                <a class="text-link text-link--navy" href="#">
+                  <span>Consultar ficha del asunto</span>
+                  <img src="./assets/case-arrow.svg" alt="" />
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="practice-explorer section-shell" data-node-id="7185:9541">
+        <div class="practice-stage practice-stage--teaser">
+          <div class="timeline__content">
+            <p class="section-label">Áreas de práctica</p>
+            <h2>Capacidades por área, conectadas por liderazgo senior.</h2>
+            <p class="timeline__lede">
+              Una vista compacta de las áreas que suelen intervenir en asuntos complejos, sin convertir
+              la home en un directorio.
+            </p>
+            <a class="text-link text-link--light practice-stage__trigger" href="./areas-de-practica.html">
+              <span>Conocer &aacute;reas de pr&aacute;ctica</span>
+              <img src="./assets/practice-arrow.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="practice-cols">
+            <div class="practice-col">
+              <p class="section-label section-label--light">Asesoría</p>
+              <ul class="practice-col__items">
+                <li>Derecho Societario &amp; Gobierno Corporativo</li>
+                <li>Derecho Corporativo</li>
+                <li>Derecho Administrativo &amp; Regulación Económica</li>
+                <li>Competencia &amp; Defensa del Consumidor</li>
+                <li>Compliance &amp; Investigaciones</li>
+                <li>ESG &amp; Gobierno Corporativo</li>
+              </ul>
+            </div>
+            <div class="practice-col">
+              <p class="section-label section-label--light">Transaccional</p>
+              <ul class="practice-col__items">
+                <li>Fusiones &amp; Adquisiciones</li>
+                <li>Derecho Bancario &amp; Mercado de Capitales</li>
+                <li>Energía</li>
+                <li>Infraestructura</li>
+                <li>Venture Capital</li>
+                <li>Impuestos</li>
+              </ul>
+            </div>
+            <div class="practice-col">
+              <p class="section-label section-label--light">Litigios</p>
+              <ul class="practice-col__items">
+                <li>Conflictos Societarios</li>
+                <li>Litigios Laborales</li>
+                <li>Reestructuración e Insolvencia</li>
+                <li>Arbitraje Internacional</li>
+                <li>Seguros y Gestión de Contingencias</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="insights" data-node-id="7185:9540" data-header-theme="light">
+        <div class="section-shell insights__shell">
+          <aside class="insights__intro">
+            <h2>Conocimiento que conecta áreas, equipos y la agenda regulatoria.</h2>
+          </aside>
+
+          <div class="insights__list">
+            <article class="insight insight--featured">
+              <div class="insight__meta">
+                <span>Novedades</span>
+                <span>Emisión de acciones</span>
+              </div>
+              <h3>La Corte Suprema de Justicia de la Nación se expide en materia de protección de datos personales</h3>
+              <div class="insight__footer">
+                <time datetime="2026-04-07">7 Abril 2026</time>
+                <img src="./assets/insight-open.svg" alt="" />
+              </div>
+            </article>
+
+            <article class="insight">
+              <div class="insight__meta">
+                <span>Nuevo asunto</span>
+                <span>Derecho Bancario &amp; Mercado de Capitales</span>
+              </div>
+              <h3>Asesoramos en la emisión de ONs de VALO por AR$90.084.353.132</h3>
+              <div class="insight__footer">
+                <time datetime="2026-05-05">5 Mayo 2026</time>
+                <img src="./assets/insight-item-1.svg" alt="" />
+              </div>
+            </article>
+
+            <article class="insight">
+              <div class="insight__meta">
+                <span>Nuevo asunto</span>
+                <span>Derecho Bancario &amp; Mercado de Capitales</span>
+              </div>
+              <h3>Asesoramos a Vista Energy en la emisión internacional de ONs por US$500.000.000</h3>
+              <div class="insight__footer">
+                <time datetime="2026-04-23">23 Abril 2026</time>
+                <img src="./assets/insight-item-2.svg" alt="" />
+              </div>
+            </article>
+
+            <article class="insight">
+              <div class="insight__meta">
+                <span>Nuevo asunto</span>
+                <span>Emisión de Acciones</span>
+              </div>
+              <h3>Asesoramos a los agentes colocadores en la emisión de ONs de Pampa Energía por US$200.000.000</h3>
+              <div class="insight__footer">
+                <time datetime="2026-04-17">17 de Abril</time>
+                <img src="./assets/insight-item-3.svg" alt="" />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-cta section-shell" data-node-id="7185:9535" data-header-theme="dark">
+        <div class="eyebrow eyebrow--light">
+          <img src="./assets/ai-icon-dark.svg" alt="" />
+          <span>Búsqueda asistida</span>
+        </div>
+
+        <div class="home-cta__layout">
+          <div class="home-cta__copy">
+            <h2>Encontrar rápido el punto de entrada correcto.</h2>
+            <p>
+              Una utilidad para orientar búsquedas por sector, área, profesional o contenido sin desplazar
+              la evidencia principal de la home.
+            </p>
+          </div>
+
+          <div class="search-card">
+            <label class="search-input" aria-label="Búsqueda asistida">
+              <span class="search-input__main">
+                <img src="./assets/ai-icon-dark.svg" alt="" />
+                <input type="text" placeholder="Contanos qué estás buscando." />
+              </span>
+              <button type="button" aria-label="Enviar">
+                <img src="./assets/send-icon.svg" alt="" />
+              </button>
+            </label>
+
+            <div class="search-filters">
+              <button class="search-chip" type="button">
+                <span>Sectores</span>
+                <img src="./assets/select-arrow.svg" alt="" />
+              </button>
+              <button class="search-chip" type="button">
+                <span>Áreas de práctica</span>
+                <img src="./assets/select-arrow.svg" alt="" />
+              </button>
+              <button class="search-chip" type="button">
+                <span>Profesionales</span>
+                <img src="./assets/select-arrow.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="awards" data-node-id="7185:9539" data-header-theme="dark">
+        <div class="awards__overlay"></div>
+        <div class="section-shell awards__shell">
+          <div class="awards__header">
+            <div class="awards__copy">
+              <p class="section-label">Credenciales</p>
+              <h2>Reconocimientos</h2>
+              <p>
+                Credenciales externas como respaldo secundario de una trayectoria institucional.
+              </p>
+            </div>
+
+            <a class="text-link text-link--light" href="#">
+              <span>Ver reconocimientos</span>
+              <img src="./assets/awards-arrow.svg" alt="" />
+            </a>
+          </div>
+
+          <div class="awards__viewport" data-drag-scroll data-infinite-drag-scroll>
+            <div class="awards__grid">
+              <article class="award award--active">
+                <span>2026</span>
+                <h3>Chambers winners Latin American Awards</h3>
+              </article>
+              <article class="award award--soft">
+                <span>2026</span>
+                <h3>Chambers Top Ranked Global</h3>
+              </article>
+              <article class="award award--faded">
+                <span>2026</span>
+                <h3>Chambers ranked in Latin American</h3>
+              </article>
+              <article class="award award--ghost">
+                <span>2026</span>
+                <h3>Chambers Top Ranked High Net Worth</h3>
+              </article>
+              <article class="award award--ghost-2">
+                <span>2026</span>
+                <h3>Chambers Top Ranked High Net Worth</h3>
+              </article>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer" data-node-id="7185:9547" data-header-theme="dark">
+      <div class="footer__main">
+        <div class="section-shell footer__shell">
+          <div class="footer__topline">
+            <img class="footer__logo" src="./assets/footer-logo.svg" alt="Bruchou & Funes de Rioja" />
+            <div class="footer__badges">
+              <img src="./assets/footer-badge-1.svg" alt="" />
+              <img src="./assets/footer-badge-2.svg" alt="" />
+              <img src="./assets/footer-iram-1.png" alt="" />
+              <img src="./assets/footer-iram-2.png" alt="" />
+            </div>
+          </div>
+
+          <div class="footer__content">
+            <div class="footer__links">
+              <div class="footer__column">
+                <h3>Nosotros</h3>
+                <a href="https://bruchoufunes.com/compromiso-sustentable/" target="_blank" rel="noreferrer">Compromiso sustentable</a>
+                <a href="https://bruchoufunes.com/premios-y-distinciones/" target="_blank" rel="noreferrer">Reconocimientos</a>
+                <a href="https://bruchoufunes.com/alianzas-internacionales/" target="_blank" rel="noreferrer">Alianzas internacionales</a>
+              </div>
+
+              <div class="footer__column">
+                <h3>Sectores</h3>
+                <a href="#sectores-industriales">Energía y Recursos Naturales</a>
+                <a href="#sectores-industriales">Mercado de Capitales</a>
+                <a href="#sectores-industriales">Fusiones y Adquisiciones</a>
+                <a href="#sectores-industriales">Infraestructura y Concesiones</a>
+                <a href="#sectores-industriales">Derecho Corporativo</a>
+                <a href="#sectores-industriales">Litigios y Arbitraje</a>
+              </div>
+
+              <div class="footer__column">
+                <h3>&Aacute;reas de pr&aacute;ctica</h3>
+                <a href="https://bruchoufunes.com/areas-de-practica/" target="_blank" rel="noreferrer">Asesoría</a>
+                <a href="https://bruchoufunes.com/areas-de-practica/" target="_blank" rel="noreferrer">Transaccional</a>
+                <a href="https://bruchoufunes.com/areas-de-practica/" target="_blank" rel="noreferrer">Litigios</a>
+                <a href="https://bruchoufunes.com/areas-de-practica/" target="_blank" rel="noreferrer">Ver todas las áreas de prácticas</a>
+              </div>
+
+              <div class="footer__column">
+                <h3>Nuestro Equipo</h3>
+                <a href="https://bruchoufunes.com/profesionales#tabs" target="_blank" rel="noreferrer">Profesionales</a>
+                <a href="https://bruchoufunes.com/profesionales#tabs" target="_blank" rel="noreferrer">Líderes de Práctica</a>
+              </div>
+
+              <div class="footer__column">
+                <h3>Generales</h3>
+                <a href="https://bruchoufunes.com/noticias/" target="_blank" rel="noreferrer">Novedades</a>
+                <a href="https://bruchoufunes.com/trabajar-en-bruchou-funes-de-rioja/" target="_blank" rel="noreferrer">Trabajar con Nosotros</a>
+                <a href="https://bruchoufunes.com/pro-bono/" target="_blank" rel="noreferrer">Pro Bono</a>
+                <a href="https://bruchoufunes.com/politica-de-privacidad/" target="_blank" rel="noreferrer">Política de Privacidad</a>
+                <a href="https://bruchoufunes.com/politica-de-privacidad/" target="_blank" rel="noreferrer">Contacto</a>
+                <a href="https://bruchoufunes.com/politica-de-privacidad/" target="_blank" rel="noreferrer">Oficinas</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="section-shell footer__bottom-shell">
+          <p>© Bruchou &amp; Funes de Rioja. Todos los derechos reservados</p>
+          <div class="footer__socials">
+            <span>Seguinos</span>
+            <a href="https://www.linkedin.com/company/bruchou" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <img src="./assets/footer-linkedin.svg" alt="" />
+            </a>
+            <a href="https://twitter.com/BruchouFunes/" target="_blank" rel="noreferrer" aria-label="X">
+              <img src="./assets/footer-x.svg" alt="" />
+            </a>
+            <a href="https://www.instagram.com/bruchoufunes/" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <img src="./assets/footer-instagram.svg" alt="" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCzuU44XFqzGK_u_FkeiPQCg" target="_blank" rel="noreferrer" aria-label="YouTube">
+              <img src="./assets/footer-youtube.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/vendor/gsap.min.js"></script>
+    <script src="./assets/vendor/Flip.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
